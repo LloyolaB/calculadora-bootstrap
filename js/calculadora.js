@@ -37,3 +37,8 @@ function calcular() {
     display.value = "";
   });
 }
+
+// mostrar una alerta bootstrap al entrar en la pagina
+$(document).ready(function () {
+  $("#exampleModal").modal("show");
+});

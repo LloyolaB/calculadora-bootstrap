@@ -13,21 +13,19 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calculadora.css" />
   </head>
 
   <body onload="calcular()">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"></nav>
     </header>
     <main>
       <div class="container mt-5">
-        <h1 class="text-center">Calculadora</h1>
+        <h1 class="text-center">Calculadora Frontend</h1>
         <div class="row mt-5">
           <div class="col-md-4">
-            <input type="text" name="display" class="form-control" id="display"  />
+            <input type="text" name="display" class="form-control" id="display" />
           </div>
         </div>
         <div class="row mt-3">
@@ -89,6 +87,20 @@
         </div>
       </div>
     </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Calculadora Frontend</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label=\"Close"></button>
+          </div>
+          <div class="modal-body">
+           Bienvenido/a a nuestra calculadora. Esperamos que le guste.
+          </div>
+          
+        </div>
+      </div>
+    </div>
     <footer>
       <!-- place footer here -->
     </footer>
@@ -104,6 +116,8 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/calculadora.js"></script>
+    
   </body>
 </html>
